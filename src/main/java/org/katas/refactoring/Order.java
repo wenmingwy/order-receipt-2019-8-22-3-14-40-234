@@ -24,4 +24,13 @@ public class Order {
     public List<LineItem> getLineItems() {
         return lineItem;
     }
+    public StringBuilder printDateBillName(Order order){
+	    StringBuilder output = new StringBuilder();
+	    output.append("======Printing Orders======\n");
+	    output.append(order.getCustomerName());
+	    output.append(order.getCustomerAddress());
+	    return output;
+    }
+    
 }
+
